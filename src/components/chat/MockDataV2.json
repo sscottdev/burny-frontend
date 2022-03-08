@@ -1,0 +1,58 @@
+[
+    {"id":"root",
+        "type": "question",
+        "val": "my first question",
+        "answers":[
+            {
+                "id":"a1",
+                "goTo": "q2",
+                "val": "my first answer"
+            },
+            {
+                "id":"a2",
+                "goTo": "q3",
+                "val": "my second answer"    
+            }
+        ] 
+    },
+    {"id":"q2",
+        "type": "question",
+        "val": "my second question",
+        "answers":[
+            {
+                "id":"a3",
+                "goTo": "s1",
+                "val": "my 3rd answer"
+            },
+            {
+                "id":"a4",
+                "goTo": "s2",
+                "val": "my 4th answer"    
+            }
+        ] 
+    },
+    {"id":"q3",
+        "type": "question",
+        "val": "my third question",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "s1",
+                "val": "my 5th answer"
+            },
+            {
+                "id":"a6",
+                "goTo": "s2",
+                "val": "my 6th answer"    
+            }
+        ] 
+    },
+    {"id":"s1",
+        "type": "summary",
+        "val": "this is my first summary: Duis incididunt ut dolore eiusmod non cupidatat nostrud voluptate qui ex ad. Veniam sunt commodo nisi velit deserunt deserunt laboris exercitation proident. Eiusmod sint nulla sit eu minim excepteur qui ad irure pariatur. Cupidatat cillum quis cillum culpa adipisicing nisi commodo ipsum dolore sint. Incididunt commodo nisi amet mollit in dolore eu nulla duis elit tempor dolore. Amet voluptate reprehenderit adipisicing veniam ipsum qui exercitation et."
+    },
+    {"id":"s2",
+        "type": "summary",
+        "val": "this is my second summary: Duis incididunt ut dolore eiusmod non cupidatat nostrud voluptate qui ex ad. Veniam sunt commodo nisi velit deserunt deserunt laboris exercitation proident. Eiusmod sint nulla sit eu minim excepteur qui ad irure pariatur. Cupidatat cillum quis cillum culpa adipisicing nisi commodo ipsum dolore sint. Incididunt commodo nisi amet mollit in dolore eu nulla duis elit tempor dolore. Amet voluptate reprehenderit adipisicing veniam ipsum qui exercitation et."
+    }
+]
