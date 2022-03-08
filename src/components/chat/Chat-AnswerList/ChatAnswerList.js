@@ -1,17 +1,13 @@
-import React from 'react'
-import ChatAnswer from './Chat-Answer/ChatAnswer'
+import React from "react";
+import ChatAnswer from "./Chat-Answer/ChatAnswer";
 
-export default function ChatAnswerList() {
-
-
-    const onClickHandler = () => {
-        console.log("clicked")
-    }
+export default function ChatAnswerList(props) {
 
   return (
     <div>
-        <ChatAnswer answer="first answer" onClick={onClickHandler}/>
-        <ChatAnswer answer="second answer"  onClick={onClickHandler}/>
+      {props.list.map((answer) => 
+        (<ChatAnswer key={answer.id} id={answer.id} answer={answer.val} onClick={props.onSelection} />)
+      )}
     </div>
-  )
+  );
 }
