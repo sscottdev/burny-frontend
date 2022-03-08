@@ -6,16 +6,28 @@ import messageService from "./MessageService";
 
 export default function Chat(props) {
   // const [chatNode, setChatNode] = useState(messageService.getRoot());
-  const [chatNode, setChatNode] = useState(messageService.goTo("q2"));
-  const [messages, setMessages] = useState([]);
+  // const [chatNode, setChatNode] = useState(messageService.goTo("q2"));
+
+  const [messages, setMessages] = useState([messageService.getRoot()]);
 
   const onSelectionHandler = (event) => {
-    console.log(event.target.id)
+    console.log(event.target.dataset.goto)
+    setMessages(prevMessages => {
+      return [...prevMessages, messageService.goTo(event.target.dataset.goto) ]
+    })
 }
 
   return (
     <div>
-      <ChatMessage message={chatNode} onSelection={onSelectionHandler}/>
+      {
+        messages.map(message => {
+          if(message.type === "question"){
+            return <ChatMessage key={message.id} message={message} onSelection={onSelectionHandler}/>
+          } else if(message.type === "summary"){
+            return <ChatSummary key={message.id} summary={message.val}/>
+          }
+        })
+      }
     </div>
   );
 }
