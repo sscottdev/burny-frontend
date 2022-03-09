@@ -8,7 +8,7 @@ export default function ChatMessage(props) {
   return (
     <div>
         <ChatQuestion question={props.message.val} />
-        <ChatAnswerList list={props.message.answers} onSelection={props.onSelection}/>
+        <ChatAnswerList list={props.message.answers} />
     </div>
   )
 }

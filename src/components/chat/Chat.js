@@ -9,7 +9,6 @@ export default function Chat(props) {
   // const [chatNode, setChatNode] = useState(messageService.goTo("q2"));
 
   const [messages, setMessages] = useState([messageService.getRoot()]);
-  const ctx = useContext(MessageContext);
   const onSelectionHandler = (event) => {
     console.log(event.target.dataset.goto);
     setMessages((prevMessages) => {
@@ -18,22 +17,20 @@ export default function Chat(props) {
   };
 
   return (
-    <React.Fragment>
+    <MessageContext.Provider value={{currentMessage: "root", onSelection: onSelectionHandler}}>
       {messages.map((message) => {
         if (message.type === "question") {
-          console.log(ctx);
           return (
             <ChatMessage
               key={message.id}
               message={message}
-              onSelection={onSelectionHandler}
             />
           );
         } else if (message.type === "summary") {
           return <ChatSummary key={message.id} summary={message.val} />;
         }
       })}
-    </React.Fragment>
+    </MessageContext.Provider>
     // <div>
     //   {
     //     messages.map(message => {

@@ -6,9 +6,8 @@ function App() {
 
   return (
     <div className="App">
-      <MessageContext.Provider value={{currentMessage: "root"}}>
+      
          <Chat />
-      </MessageContext.Provider>
     </div>
   );
 }
