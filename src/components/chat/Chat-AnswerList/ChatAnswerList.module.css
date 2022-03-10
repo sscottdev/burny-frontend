@@ -1,0 +1,12 @@
+.messagecontainer {
+    background-color: #B7E4C7;
+    max-width: 40vw;
+    margin-left: 75px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 20px;
+    margin-top: 10px;
+}
+
+.messagecontainer > a{
+    margin-right: 10px;
+}

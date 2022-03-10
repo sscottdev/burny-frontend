@@ -1,1 +1,7 @@
 @import-normalize;
+
+.App {
+    background-color:    #D7E3FCCC;
+    min-height: 100vh;
+    padding: 20px;
+}

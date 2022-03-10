@@ -1,0 +1,19 @@
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #40916c;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #023e8a;
+    text-decoration: none;
+  }
