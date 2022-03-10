@@ -1,4 +1,5 @@
 import React from "react";
+import Summary from './Chat-Summary.module.css';
 
 export default function ChatSummary(props) {
   return (
