@@ -1,58 +1,155 @@
 [
     {"id":"root",
         "type": "question",
-        "val": "my first question",
+        "val": "How are you currently feeling?",
         "answers":[
             {
                 "id":"a1",
                 "goTo": "q2",
-                "val": "my first answer"
+                "val": "Optimistic"
             },
             {
                 "id":"a2",
-                "goTo": "q3",
-                "val": "my second answer"    
+                "goTo": "q5",
+                "val": "Demotivated"    
+            },
+            {
+                "id":"a15",
+                "goTo": "q5",
+                "val": "Unsure/Other"
             }
         ] 
     },
     {"id":"q2",
         "type": "question",
-        "val": "my second question",
+        "val": "Have you felt productive in your work?",
         "answers":[
             {
                 "id":"a3",
-                "goTo": "s1",
-                "val": "my 3rd answer"
+                "goTo": "q3",
+                "val": "Yes"
             },
             {
                 "id":"a4",
-                "goTo": "s2",
-                "val": "my 4th answer"    
+                "goTo": "q4",
+                "val": "No"    
             }
         ] 
     },
     {"id":"q3",
         "type": "question",
-        "val": "my third question",
+        "val": "Do you enjoy participating in school and/or work activities?",
         "answers":[
             {
                 "id":"a5",
                 "goTo": "s1",
-                "val": "my 5th answer"
+                "val": "Yes"
+            },
+            {
+                "id":"a6",
+                "goTo": "q4",
+                "val": "No"    
+            }
+        ] 
+    },
+    {"id":"q4",
+        "type": "question",
+        "val": "Have you noticed higher stress level in your life?",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "q7",
+                "val": "Yes"
             },
             {
                 "id":"a6",
                 "goTo": "s2",
-                "val": "my 6th answer"    
+                "val": "No"    
             }
         ] 
     },
+    {"id":"q5",
+        "type": "question",
+        "val": "Have you felt out of control and powerless in your life?",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "q6",
+                "val": "Yes"
+            },
+            {
+                "id":"a6",
+                "goTo": "q4",
+                "val": "No"    
+            }
+        ] 
+    },
+    {"id":"q6",
+        "type": "question",
+        "val": "Have you found yourself distancing from your friends and family?",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "q7",
+                "val": "Yes"
+            },
+            {
+                "id":"a6",
+                "goTo": "q4",
+                "val": "No"    
+            }
+        ] 
+    },
+    {"id":"q7",
+        "type": "question",
+        "val": "Have you felt increase in headaches and/or lack of sleep?",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "q8",
+                "val": "Yes"
+            },
+            {
+                "id":"a6",
+                "goTo": "s3",
+                "val": "No"    
+            }
+        ] 
+    },
+    {"id":"q8",
+        "type": "question",
+        "val": "Have you felt these symptoms for a long period of time?",
+        "answers":[
+            {
+                "id":"a5",
+                "goTo": "s5",
+                "val": "Yes"
+            },
+            {
+                "id":"a6",
+                "goTo": "s4",
+                "val": "No"    
+            }
+        ] 
+    }, 
     {"id":"s1",
         "type": "summary",
-        "val": "this is my first summary: Duis incididunt ut dolore eiusmod non cupidatat nostrud voluptate qui ex ad. Veniam sunt commodo nisi velit deserunt deserunt laboris exercitation proident. Eiusmod sint nulla sit eu minim excepteur qui ad irure pariatur. Cupidatat cillum quis cillum culpa adipisicing nisi commodo ipsum dolore sint. Incididunt commodo nisi amet mollit in dolore eu nulla duis elit tempor dolore. Amet voluptate reprehenderit adipisicing veniam ipsum qui exercitation et."
+        "val": "Honeymoon Phase: This stage is categorized by high satisfaction in your current situation. You are more likely to feel energetic and creative in your work. At this stage, it is best to create positive coping strategies to deal with any ongoing stress.  "
     },
     {"id":"s2",
         "type": "summary",
-        "val": "this is my second summary: Duis incididunt ut dolore eiusmod non cupidatat nostrud voluptate qui ex ad. Veniam sunt commodo nisi velit deserunt deserunt laboris exercitation proident. Eiusmod sint nulla sit eu minim excepteur qui ad irure pariatur. Cupidatat cillum quis cillum culpa adipisicing nisi commodo ipsum dolore sint. Incididunt commodo nisi amet mollit in dolore eu nulla duis elit tempor dolore. Amet voluptate reprehenderit adipisicing veniam ipsum qui exercitation et."
+        "val": "Onset of Stress: At this stage, you are most likely experiencing a few bad days in the week. You may have noticed an increase in job and/or work dissatisfaction, work inefficiency and escapist activities (overeating, drinking, smoking, etc.)."
+    },
+    {"id":"s3",
+        "type": "summary",
+        "val": "Chronic Stress: If you’re at this stage, you have probably noticed the physical side effects of stress. You most likely felt severe headaches, digestive problems, chronic exhaustion, and/or physical illnesses. Your work ethic may be at an all-time low, with problem-solving skills and performance decreasing. It may even be harder to control your emotional state, often lashing out at others or experiencing depressive episodes. "
+    },
+    {"id":"s4",
+        "type": "summary",
+        "val": "Burnout: At this stage, your symptoms may become severe to the point where you find it difficult to function. You may have experienced an increase in the feeling of failure and powerlessness. You may become indifferent to work and/or school. Any physical symptoms may intensify or increase in number.  "
+    },
+    {"id":"s5",
+        "type": "summary",
+        "val": "Habitual Burnout: This stage is similar to burnout, with symptoms such as feelings of failure, indifference to work, physical illnesses, and fatigue. However, these symptoms of burnout may have become embedded in your life, acting as a habit.  "
     }
 ]
