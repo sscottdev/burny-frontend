@@ -10,3 +10,15 @@
 .messagecontainer > a{
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .messagecontainer {
+        display: flex;
+        flex-direction: column;
+
+      }
+      .messagecontainer > a{
+        margin-top: 20px;
+    }
+
+}
