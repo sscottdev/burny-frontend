@@ -1,3 +1,9 @@
+* {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+
 .messagecontainer {
     background-color: #B7E4C7;
     max-width: 40vw;
