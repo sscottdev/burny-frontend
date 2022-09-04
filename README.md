@@ -1,4 +1,4 @@
-#What is burny?
+# What is burny?
 
 Burny is a program that is accessible on mobile and desktop, its a survey which goes through a proccess of questions and whatever answer you put will impact what question it will ask you next. Then Burny gives you suggestions and a summary on what you might have. Burny is a science project made by Sean Scott, Kateryna Kondrashova, and Falsariro Arnold. This project is abandon and is not reciving updates or revamps in the future as of now.
 
